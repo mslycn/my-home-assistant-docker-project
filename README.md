@@ -81,6 +81,11 @@ Home Assistant recommends the Home Assistant OS installation method.
 - [Home Assistant Installation](https://www.home-assistant.io/installation/) - The official installation guides.
 - [Compare Installation Methods](https://www.home-assistant.io/installation/#compare-installation-methods) - The available installation methods compared.
 
+Home Assistant recommends the Home Assistant OS installation method.
+
+- [Home Assistant Installation](https://www.home-assistant.io/installation/) - The official installation guides.
+- [Compare Installation Methods](https://www.home-assistant.io/installation/#compare-installation-methods) - The available installation methods compared.
+
 ## In case you need help
 
 _There are various ways to get in touch with the Home Assistant community.
