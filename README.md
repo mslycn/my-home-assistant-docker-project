@@ -83,7 +83,7 @@ Home Assistant recommends the Home Assistant OS installation method.
 
 Home Assistant recommends the Home Assistant OS installation method.
 
-- [Home Assistant Installation](https://www.home-assistant.io/installation/) - The official installation guides.
+- [Raspberry Pi OS Lite (64-bit) Installation - ](https://www.home-assistant.io/installation](https://blog.matterxiaomi.com/blog/Raspberry-Pi-part2/) - The official installation guides.How to install Raspberry Pi OS Lite (64-bit) with an SD card reader
 - [Compare Installation Methods](https://www.home-assistant.io/installation/#compare-installation-methods) - The available installation methods compared.
 
 ## In case you need help
