@@ -71,20 +71,11 @@ You can navigate through the list by:
 
 ## Installing
 
-Home Assistant has several installation methods; each has advantages and
-disadvantages. Many people have different opinions and personal favorites.
-Important to know that there is no wrong or right here; each technique installs
-the SAME Home Assistant.
+Before setting up Home Assistant in Docker, there are a few hardware and OS requirements that must be met. 
 
-Home Assistant recommends the Home Assistant OS installation method.
-
-- [Home Assistant Installation](https://www.home-assistant.io/installation/) - The official installation guides.
-- [Compare Installation Methods](https://www.home-assistant.io/installation/#compare-installation-methods) - The available installation methods compared.
-
-Home Assistant recommends the Home Assistant OS installation method.
+raspberry pi os lite (64-bit)  on Raspberry Pi 3b+ installation method.
 
 - [Raspberry Pi OS Lite (64-bit) Installation](https://blog.matterxiaomi.com/blog/Raspberry-Pi-part2/) - The official installation guides.How to install Raspberry Pi OS Lite (64-bit) with an SD card reader
-- [Compare Installation Methods](https://www.home-assistant.io/installation/#compare-installation-methods) - The available installation methods compared.
 
 ## In case you need help
 
