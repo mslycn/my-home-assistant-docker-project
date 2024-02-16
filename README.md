@@ -60,6 +60,14 @@ raspberry pi os lite (64-bit)  on Raspberry Pi 3b+ installation method.
 
 - [Raspberry Pi OS Lite (64-bit) Installation](https://blog.matterxiaomi.com/blog/Raspberry-Pi-part2/) - The official installation guides.How to install Raspberry Pi OS Lite (64-bit) with an SD card reader
 
+## Installing Docker
+
+Before setting up Home Assistant in Docker, there are a few hardware and OS requirements that must be met. 
+raspberry pi os lite (64-bit)  on Raspberry Pi 3b+ installation method.
+
+- [Raspberry Pi OS Lite (64-bit) Installation](https://blog.matterxiaomi.com/blog/Raspberry-Pi-part2/) - The official installation guides.How to install Raspberry Pi OS Lite (64-bit) with an SD card reader
+  
+
 ## In case you need help
 
 _There are various ways to get in touch with the Home Assistant community.
