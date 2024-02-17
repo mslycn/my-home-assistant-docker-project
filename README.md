@@ -15,6 +15,7 @@ This method involves running Home Assistant Core in a standalone container, typi
 
 - [How to use](#how-to-use)
 - [Installing](#installing)
+- [Installing Docker](#installing-docker)
 - [In case you need help](#in-case-you-need-help)
   - [Official Communities](#official-communities)
   - [Other Communities](#other-communities)
