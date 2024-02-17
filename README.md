@@ -79,9 +79,9 @@ or just say ‘Hi’._
 - [TileBoard](https://github.com/resoai/TileBoard) - A simple yet highly configurable Dashboard.
 - [Dwains Dashboard](https://github.com/dwainscheeren/dwains-lovelace-dashboard) - An fully auto-generating dashboard for desktop, tablet and mobile.
 
-### Other Communities
+### Configuration of Home Assistant
 
-### Official Communities
+### Updating Home Assistant in Docker
 
 - [TileBoard](https://github.com/resoai/TileBoard) - A simple yet highly configurable Dashboard.
 - [Dwains Dashboard](https://github.com/dwainscheeren/dwains-lovelace-dashboard) - An fully auto-generating dashboard for desktop, tablet and mobile.
