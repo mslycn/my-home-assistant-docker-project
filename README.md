@@ -67,6 +67,24 @@ Before setting up Home Assistant in Docker, there are a few hardware and OS requ
 raspberry pi os lite (64-bit)  on Raspberry Pi 3b+ installation method.
 
 - [Raspberry Pi OS Lite (64-bit) Installation](https://blog.matterxiaomi.com/blog/Raspberry-Pi-part2/) - The official installation guides.How to install Raspberry Pi OS Lite (64-bit) with an SD card reader
+
+## Home Assistant Docker
+
+_There are various ways to get in touch with the Home Assistant community.
+It doesn't matter if you have a question, need help, want to request a feature,
+or just say ‘Hi’._
+
+### Running Home Assistant in a Docker Container
+
+- [TileBoard](https://github.com/resoai/TileBoard) - A simple yet highly configurable Dashboard.
+- [Dwains Dashboard](https://github.com/dwainscheeren/dwains-lovelace-dashboard) - An fully auto-generating dashboard for desktop, tablet and mobile.
+
+### Other Communities
+
+### Official Communities
+
+- [TileBoard](https://github.com/resoai/TileBoard) - A simple yet highly configurable Dashboard.
+- [Dwains Dashboard](https://github.com/dwainscheeren/dwains-lovelace-dashboard) - An fully auto-generating dashboard for desktop, tablet and mobile.
   
 
 ## In case you need help
