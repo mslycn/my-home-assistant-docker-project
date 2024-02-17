@@ -14,7 +14,7 @@ This method involves running Home Assistant Core in a standalone container, typi
 ## Contents
 
 - [How to use](#how-to-use)
-- [Installing](#installing)
+- [Installing OS](#installing-os)
 - [Installing Docker](#installing-docker)
 - [In case you need help](#in-case-you-need-help)
   - [Official Communities](#official-communities)
@@ -54,7 +54,7 @@ You can navigate through the list by:
 - Go through our [_Contents list_](#contents)
 - Alternatively, use the search on our website: <https://www.awesome-ha.com>
 
-## Installing
+## Installing OS
 
 Before setting up Home Assistant in Docker, there are a few hardware and OS requirements that must be met. 
 raspberry pi os lite (64-bit)  on Raspberry Pi 3b+ installation method.
