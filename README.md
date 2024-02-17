@@ -9,7 +9,7 @@
   <a href="https://awesome-ha.com"><strong>https://awesome-ha.com</strong></a>
 </div>
 
-This method involves running Home Assistant Core in a standalone container, typically using Docker.
+This method involves running Home Assistant Core in a standalone container, typically using Docker.Follow these steps to get the Home assistant docker installed on your system
 
 ## Contents
 
