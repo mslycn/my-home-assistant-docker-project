@@ -86,8 +86,8 @@ or just say ‘Hi’._
 
 ### Updating Home Assistant in Docker
 
-- [TileBoard](https://github.com/resoai/TileBoard) - A simple yet highly configurable Dashboard.
-- [Dwains Dashboard](https://github.com/dwainscheeren/dwains-lovelace-dashboard) - An fully auto-generating dashboard for desktop, tablet and mobile.
+- [update Home Assistant Docker in Debian](https://blog.matterxiaomi.com/blog/how-to-install-uninstall-and-reinstall-update-home-assistant-docker-in-debian/) - A simple yet highly configurable Dashboard.
+- [How to update Home Assistant Docker in Debian - Bind mounts](https://blog.matterxiaomi.com/blog/how-to-install-uninstall-and-reinstall-update-home-assistant-docker-in-debian-part1/) - update Home Assistant Docker in Debian - Bind mounts.
   
 
 ## In case you need help
