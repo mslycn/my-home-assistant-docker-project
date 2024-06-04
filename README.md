@@ -100,7 +100,7 @@ or just say ‘Hi’._
 
 _Home Assistant Remote access_
 
-- [TileBoard](https://github.com/resoai/TileBoard) - A simple yet highly configurable Dashboard.
+- [frpc+ frps(aliyun vps)](https://www.matterxiaomi.com/boards/topic/3224/home-assistant-remote-access-202414aliyun-vps-server-frpraspberry-pi-3bhow-to-install-raspberry-pi-o/page/2#37267) - A simple yet highly configurable Dashboard.
 - [Dwains Dashboard](https://github.com/dwainscheeren/dwains-lovelace-dashboard) - An fully auto-generating dashboard for desktop, tablet and mobile.
 
 ### Other Communities
