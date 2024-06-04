@@ -98,6 +98,8 @@ or just say ‘Hi’._
 
 ## Installing frpc
 
+_Home Assistant Remote access_
+
 - [TileBoard](https://github.com/resoai/TileBoard) - A simple yet highly configurable Dashboard.
 - [Dwains Dashboard](https://github.com/dwainscheeren/dwains-lovelace-dashboard) - An fully auto-generating dashboard for desktop, tablet and mobile.
 
