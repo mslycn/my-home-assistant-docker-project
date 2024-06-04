@@ -16,7 +16,7 @@ This method involves running Home Assistant Core in a standalone container, typi
 - [How to use](#how-to-use)
 - [Installing OS](#installing-os)
 - [Installing Docker](#installing-docker)
-- [Home Assistant Docker](#home-assistant-docker)
+- [Installing Home Assistant Docker](#home-assistant-docker)
   - [Official Communities](#official-communities)
   - [Other Communities](#other-communities)
 - [In case you need help](#in-case-you-need-help)
@@ -90,13 +90,13 @@ or just say ‘Hi’._
 - [How to update Home Assistant Docker in Debian - Bind mounts](https://blog.matterxiaomi.com/blog/how-to-install-uninstall-and-reinstall-update-home-assistant-docker-in-debian-part1/) - update Home Assistant Docker in Debian - Bind mounts.
   
 
-## In case you need help
+## Installing Git
 
 _There are various ways to get in touch with the Home Assistant community.
 It doesn't matter if you have a question, need help, want to request a feature,
 or just say ‘Hi’._
 
-### Official Communities
+## Installing frpc
 
 - [TileBoard](https://github.com/resoai/TileBoard) - A simple yet highly configurable Dashboard.
 - [Dwains Dashboard](https://github.com/dwainscheeren/dwains-lovelace-dashboard) - An fully auto-generating dashboard for desktop, tablet and mobile.
