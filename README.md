@@ -90,7 +90,7 @@ raspberry pi os lite (64-bit)  on Raspberry Pi 3b+ installation method.
 - [Start Home Assistant Docker automatically in Debian](https://www.matterxiaomi.com/boards/topic/15671/docker-cli/page/2#28468) - Start Home Assistant Docker automatically in Debian 12.
 - [Start containers automatically - Offcial doc](https://docs.docker.com/config/containers/start-containers-automatically/) - Start containers automatically.
     
-### Updating Home Assistant in Docker
+## Updating Home Assistant in Docker
 
 - [update Home Assistant Docker in Debian](https://blog.matterxiaomi.com/blog/how-to-install-uninstall-and-reinstall-update-home-assistant-docker-in-debian/) - A simple yet highly configurable Dashboard.
 - [How to update Home Assistant Docker in Debian - Bind mounts](https://docs.docker.com/config/containers/start-containers-automatically/) - update Home Assistant Docker in Debian - Bind mounts.
