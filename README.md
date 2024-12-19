@@ -7,6 +7,8 @@ remote:https://github.com/mslycn/my-home-assistant-docker-project
 
 This method involves running Home Assistant Core in a standalone container, typically using Docker.Follow these steps to get the Home assistant docker installed on your system
 
+
+
 ## Contents
 
 - [How to use](#how-to-use)
@@ -207,7 +209,7 @@ _Links to various users of Home Assistant that regularly publish Home Assistant 
 
 ### Blogs
 
-- [DIY Futurism](https://diyfuturism.com/) - Brad posts articles with great instructions for new users.
+- [Free disk space on Raspberry Pi OS Lite](https://raspberrytips.com/raspbian-free-disk-space/) - ok Free disk space on Raspberry Pi OS Lite.
 - [Phil Hawthorne](https://philhawthorne.com/homeautomation) - Co-host of the Home Assistant Podcast.
 - [Smart Home Hobby](https://smarthomehobby.com/) - Features budget friendly guides and information.
 - [Self Hosted Home](https://selfhostedhome.com/) - Articles on DIY home automation projects and self hosted services.
