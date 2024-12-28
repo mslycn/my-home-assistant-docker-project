@@ -43,6 +43,26 @@ This method involves running Home Assistant Core in a standalone container, typi
 - [Other Awesome Lists](#other-awesome-lists)
 - [Trademark Legal Notice](#trademark-legal-notice)
 
+
+## Quick Start
+
+**on OS side**
+
+Raspberry Pi OS Lite (64-bit) Installation
+
+Install Xshell  
+
+Installing Docker on Raspberry Pi OS Lite (64-bit)
+
+**on docker side**
+
+Running Home Assistant in a Docker Container
+
+Install HACS
+
+
+
+
 ## How to use
 
 Awesome Home Assistant is a fantastic list for people trying to automate every
