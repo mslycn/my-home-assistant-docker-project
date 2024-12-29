@@ -48,16 +48,23 @@ This method involves running Home Assistant Core in a standalone container, typi
 
 **on OS side**
 
-Raspberry Pi OS Lite (64-bit) Installation
+Installing Raspberry Pi OS Lite (64-bit) on Raspberry Pi
 
-Install Xshell  
+Install Xshell  ssh server on Raspberry Pi OS Lite (64-bit)
 
 Installing Docker on Raspberry Pi OS Lite (64-bit)
 
+Install git on Raspberry Pi OS Lite (64-bit)
+
+Install frpc client on Raspberry Pi OS Lite (64-bit)
+
 **on docker side**
+
+Installing Home Assistant on Docker
 
 Running Home Assistant in a Docker Container
 
+**on Home Assistant in a Docker Container side**
 Install HACS
 
 
