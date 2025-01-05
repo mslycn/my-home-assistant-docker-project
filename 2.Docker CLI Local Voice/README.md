@@ -8,7 +8,7 @@ Release:	22.04
 Codename:	jammy
 ~~~
 
-## Docker run wyoming-piper  wyoming-whisper  wyoming-openwakeword
+## step 1.Docker run wyoming-piper  wyoming-whisper  wyoming-openwakeword
 
 ~~~
 docker ps -a
@@ -21,17 +21,20 @@ CONTAINER ID   IMAGE                          COMMAND                  CREATED  
 
 ~~~
 
-## Wyoming Protocol Integration
+## step 2.Wyoming Protocol Integration
+
+integrate all of above to home assistant via  Wyoming Protocol Integration
 
 http://192.168.2.50:8123/config/integrations/integration/wyoming
 
 
-## Voice assistants
+## step 3.Voice assistants
+create a Voice assistants named with test
 
 
+## step 4.EspHome  ESP32-S3-BOX3B voice assistant
 
-## EspHome  ESP32-S3-BOX3B voice assistant
-
+Configure  EspHome  ESP32-S3-BOX3B use test voice assistant as voice assistant
 
 ## test
 
