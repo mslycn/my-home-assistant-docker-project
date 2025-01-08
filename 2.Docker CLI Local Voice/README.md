@@ -29,14 +29,30 @@ http://192.168.2.50:8123/config/integrations/integration/wyoming
 
 
 ## step 3.Voice assistants
-create a Voice assistants named with test
+create a Voice assistants named with test  for EspHome ESP32-S3-BOX3B
 
 
 ## step 4.EspHome  ESP32-S3-BOX3B voice assistant
 
-Configure  EspHome  ESP32-S3-BOX3B use test voice assistant as voice assistant
+Configure  EspHome  ESP32-S3-BOX3B use test voice assistant as defalut voice assistant
 
 ## test
+
+test  audio
+
+I tied to let bing.com say ‘ok nabu’ - typed ‘ok nabu’ - and it says ‘Okey nabu’ - It  works fine.
+
+so letting bing.com say  ‘turn on the office light’ and the ligt is turned on, and box-3 is responding - chaining screens.
+
+It all works fine…
+
+ok nabu 发音
+https://cn.bing.com/translator/?ref=TThis&text=nabu+english+study&from=en&to=ZH-HANS
+
+turn off the light
+
+
+
 
 
 

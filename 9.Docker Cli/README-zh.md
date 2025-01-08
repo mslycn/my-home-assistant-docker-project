@@ -60,7 +60,7 @@ Build Cache     0         0         0B        0B
 
 containerd is just a container daemon. Doesn’t care about images.
 
-
+sudo du -h --max-depth=1 /var/lib/ | sort -hr
 
 https://docs.dockerd.com.cn/reference/cli/docker/config/create/
 
