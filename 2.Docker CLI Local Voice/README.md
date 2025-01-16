@@ -9,9 +9,10 @@ Codename:	jammy
 ~~~
 
 ## step 1.Docker run wyoming-piper  wyoming-whisper  wyoming-openwakeword
+docker ps -a
 
 ~~~
-docker ps -a
+
 CONTAINER ID   IMAGE                          COMMAND                  CREATED         STATUS         PORTS                                           NAMES
 1ee50dbb7a33   rhasspy/wyoming-piper          "bash /run.sh --voic…"   7 minutes ago   Up 7 minutes   0.0.0.0:10200->10200/tcp, :::10200->10200/tcp   nice_hofstadter
 01b832193e61   rhasspy/wyoming-openwakeword   "bash /run.sh --prel…"   7 hours ago     Up 7 hours     0.0.0.0:10400->10400/tcp, :::10400->10400/tcp   gallant_engelbart
@@ -24,6 +25,8 @@ CONTAINER ID   IMAGE                          COMMAND                  CREATED  
 ## step 2.Wyoming Protocol Integration
 
 integrate all of above to home assistant via  Wyoming Protocol Integration
+
+所有服务启动后，需要在 Home Assistant 中安装集成
 
 http://192.168.2.50:8123/config/integrations/integration/wyoming
 
@@ -66,6 +69,8 @@ faster-whisper是基于OpenAI的Whisper模型的实现。faster-whisper的核心
 https://github.com/SYSTRAN/faster-whisper
 
 ## wyoming-faster-whisper
+
+wyoming-faster-whisper 是基于faster-whisper模型添加wyoming协议的实现。wyoming协议为home assistant自动发现所用。
 
 Wyoming protocol server for the faster-whisper[https://github.com/SYSTRAN/faster-whisper] speech to text system.
 
