@@ -14,3 +14,15 @@ BUG_REPORT_URL="https://bugs.debian.org/"
 
 
 ~~~
+
+uname -r
+~~~
+6.6.20+rpt-rpi-v8
+~~~
+
+
+
+
+
+
+

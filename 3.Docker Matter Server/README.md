@@ -1,6 +1,10 @@
 
 ## Required Hardware
 
+How To Add Bluetooth Support
+
+
+
 ### Required Hardware For The ESPHome Bluetooth Proxy
 
 Bluetooth Proxy In Home Assistant Using ESPHome
