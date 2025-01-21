@@ -24,6 +24,13 @@ Release:	12
 Codename:	bookworm
 ~~~
 
+cat /etc/debian_version
+~~~
+12.7
+
+~~~
+
+
 cat /proc/version
 ~~~
 Linux version 6.6.20+rpt-rpi-v8 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT Debian 1:6.6.20-1+rpt1 (2024-03-07)
