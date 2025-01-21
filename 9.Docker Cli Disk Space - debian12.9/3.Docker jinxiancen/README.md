@@ -1,0 +1,133 @@
+Filesystem layers structure
+
+一个镜像是由多个镜像层（layer）组成的，而相同的镜像层本地只会存储一份，所以，真实情况下，占用的物理存储空间大小，可能会小于逻辑大小。
+
+The /var/lib/docker/overlay2 directory is where Docker stores all these layers on your host system.
+
+Overlay and Overlay2
+
+Docker has two versions of the Overlay file system: Overlay and Overlay2. Overlay2 is an improved version. 
+
+
+ 132ef461504b
+~~~
+[
+    {
+        "Id": "sha256:132ef461504be5c5ebd6e34e5d3fb3d7958bb6758a5136107eea9f84c299254a",
+        "RepoTags": [
+            "ghcr.io/home-assistant/home-assistant:stable"
+        ],
+        "RepoDigests": [
+            "ghcr.io/home-assistant/home-assistant@sha256:132ef461504be5c5ebd6e34e5d3fb3d7958bb6758a5136107eea9f84c299254a"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-12-20T10:56:20.296933385Z",
+        "DockerVersion": "27.3.1",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+        docker inspect    "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "S6_BEHAVIOUR_IF_STAGE2_FAILS=2",
+                "S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0",
+                "S6_CMD_WAIT_FOR_SERVICES=1",
+                "S6_SERVICES_READYTIME=50",
+                "UV_EXTRA_INDEX_URL=https://wheels.home-assistant.io/musllinux-index/",
+                "S6_SERVICES_GRACETIME=240000",
+                "UV_SYSTEM_PYTHON=true",
+                "UV_NO_CACHE=true"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/config",
+            "Entrypoint": [
+                "/init"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "io.hass.arch": "aarch64",
+                "io.hass.base.arch": "aarch64",
+                "io.hass.base.image": "ghcr.io/home-assistant/aarch64-base:3.20",
+                "io.hass.base.name": "python",
+                "io.hass.base.version": "2024.11.0",
+                "io.hass.type": "core",
+                "io.hass.version": "2024.12.5",
+                "org.opencontainers.image.authors": "The Home Assistant Authors",
+                "org.opencontainers.image.created": "2024-12-20 10:52:57+00:00",
+                "org.opencontainers.image.description": "Open-source home automation platform running on Python 3",
+                "org.opencontainers.image.documentation": "https://www.home-assistant.io/docs/",
+                "org.opencontainers.image.licenses": "Apache License 2.0",
+                "org.opencontainers.image.source": "https://github.com/home-assistant/core",
+                "org.opencontainers.image.title": "Home Assistant",
+                "org.opencontainers.image.url": "https://www.home-assistant.io/",
+                "org.opencontainers.image.version": "2024.12.5"
+            },
+            "Shell": [
+                "/bin/ash",
+                "-o",
+                "pipefail",
+                "-c"
+            ]
+        },
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 563784966,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:16113d51b7181f20135f51e8ffbaead20a7671cd783017601f198748ce8a8ebf",
+                "sha256:e23ca4cdc74997e79042bc1508d17e86b1bff03bef2046f69c90603676ecc7ca",
+                "sha256:685c08d5ffa4265a1d52eb6c282f945129c67f951472deb893879591cf2fd55f",
+                "sha256:d0eafc6c1b4b1964a37e38af86ff891906504b26d87741685e46d9094de9b0ac",
+                "sha256:38494e4a96c7da24fa928488851a6871eede29fb9abb045d2363817c4f58e27f",
+                "sha256:e1bc3ddc2bb191ea7394f3fb825ba2fd6e01bc7501d31a37504ab5ed27bfafca",
+                "sha256:25d6b2ee8293ea7a698fbf9ea9a3060f53d8063f8afa08500b5471532605ed78",
+                "sha256:86e3fde0307f088faa2e48589a17100ee8914429ea0827151d4497e53216fbdc",
+                "sha256:79acce317af601f7d2ec5846ad13f3cb03f08e828956d878f59624a339620098",
+                "sha256:101ef5184b929827647d1556724af6b4015b5818e884dd57669b5c6e4320a861",
+                "sha256:00f2635733e7064534acdb0e6fcb59d701c77d865321703eea91c469a4e06acb",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:32095157e07e2e46ca19bcbd68536234d907bbc88aeac1117d06488bf4e28305",
+                "sha256:e614876d6dfa6ebdd39b7d22068add7ac0ee127c24d8cd173945214cdac4785e",
+                "sha256:1d7d9ad945fbedaeedc832f0c6918561d693403e662c067e40886972eed25946",
+                "sha256:602c1813f0e91e56b95733e387910a782e458eb105bdc803baea0cc8c730e7cd",
+                "sha256:2593040507cc6b891ee09df229ab5b338022aa4e984324ce20e9a608a45a1af4",
+                "sha256:03ca1c02f4d406ac2deebcba2f10f8c2747e49cdf07c80d9714061ed21878962",
+                "sha256:80281faad30e8dae8a03d0a21ff43e0d1fe27d1f116e4b8c089815cafb47c729",
+                "sha256:7505b977a07e8c57a34d331d7940508acd995a1dae53cd104f43fb1c2bcfeea8",
+                "sha256:98943a6351e61baae62e838bfa6d5e4abe025dffe6ea60a91abb8afddce73939",
+                "sha256:5979550bf6916eed5535a4c36ebce13c6e8b66dadffc1bde28ebeb82fdad05f0",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:11db8d497917df81434adf027691bd3c74ca212b9a8b7ae80b47844678f094a7",
+                "sha256:8408130d022d82633071de1e0ab760e0ff7e1a6f6b2a1a6da2adc82916b28800",
+                "sha256:dbbaaf79adc9a4c4306c903b047738add2c565e5330d549400bb2d429a3b0272",
+                "sha256:4faa7d594a099f8d3a5b11b327a241c4900b33525f669a69fdcdd4a9651ed8e0",
+                "sha256:205508e488d2f911d1af575492b3c69953e1e6a6f7e53b8f721c88702aef7e07",
+                "sha256:652b15d60adb8b87667d4b02ac4b1188df1e033efe63aa573472e8b8acb7783b",
+                "sha256:4e456e6786013076a6990140b698b2754319e905a0a36a328689a9afe0202a6b",
+                "sha256:6bf1f7a02e1f1a51ada686e0424e7d046ddc59f9b40513cd6b2b8821c5df33dc",
+                "sha256:e4105cff30a8dc40bab43a2a3822f4d1ca34adf1e12b8ea7b15ee71e06999849",
+                "sha256:9b33869e9807c5f5d0362f3113ad0c9a90ac9196ac41bd5cdc4b8ffa7a52c1bb"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2024-12-28T17:32:03.435233752Z"
+        }
+    }
+]
+~~~

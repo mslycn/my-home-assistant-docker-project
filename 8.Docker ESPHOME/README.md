@@ -1,6 +1,8 @@
 
 docker pull ghcr.io/esphome/esphome:stable
 
+mkdir /data/docker/esphome
+
 
 
 sudo ufw allow 6052

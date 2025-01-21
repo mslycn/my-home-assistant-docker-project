@@ -14,9 +14,9 @@ http://localhost:4999/boards/topic/13373/optimize-your-home-assistant-database
 /var/lib/containerd
 
 
+rpi p3b+
 
-
-cpu 
+cpu 97.7%
 ~~~
 docker pull ghcr.io/home-assistant/home-assistant:stable
 
@@ -40,6 +40,31 @@ MiB Swap:    200.0 total,    151.7 free,     48.2 used.    698.7 avail Mem
    1291 root      20   0   19792   9016   7296 S   1.0   1.0   0:03.96 sshd                                         
    2321 root      20   0 1846340  27648  18304 S   1.0   3.0   0:01.45 docker                                       
    2438 pi        20   0   11712   4864   2816 R   1.0   0.5   0:00.15 top        
+
+
+~~~
+
+
+sudo git push -u origin main
+~~~
+
+ cpu 100%
+~~~
+top
+top - 22:42:51 up 7 min,  3 users,  load average: 0.58, 0.56, 0.35
+Tasks: 151 total,   2 running, 149 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 26.0 us,  0.6 sy,  0.0 ni, 73.2 id,  0.1 wa,  0.0 hi,  0.2 si,  0.0 st 
+MiB Mem :    907.3 total,    291.7 free,    350.2 used,    322.1 buff/cache     
+MiB Swap:    200.0 total,    150.0 free,     50.0 used.    557.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                      
+   1726 root      20   0  445176 171832   4636 R 100.0  18.5   0:27.94 git                                          
+    710 nobody    20   0  723272  12560   5504 S   5.0   1.4   0:07.52 frpc                                         
+   1527 root      20   0   11712   4864   2816 R   1.0   0.5   0:02.03 top                                          
+    236 root      20   0   49956  12928  12288 S   0.3   1.4   0:02.22 systemd-journal                              
+    474 avahi     20   0    7360   2944   2560 S   0.3   0.3   0:00.72 avahi-daemon                                 
+   1621 root      20   0       0      0      0 I   0.3   0.0   0:00.01 kworker/u12:0-writeback                      
+      1 root      20   0  168544   9316   7452 S   0.0   1.0   0:07.41 systemd     
 
 
 ~~~
