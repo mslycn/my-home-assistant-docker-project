@@ -1,4 +1,5 @@
 
+## OS information
 cat /etc/os-release
 
 ~~~
@@ -49,6 +50,14 @@ Debian GNU/Linux 12 \n \l
 ~~~
 
 
+## set static ip address
+
+使用nmcli设置静态IPv4地址
+
+nmcli con show
+
+
+https://blog.csdn.net/gongchenyu/article/details/134675480
 
 
 
