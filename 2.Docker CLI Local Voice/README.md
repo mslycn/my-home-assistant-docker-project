@@ -10,6 +10,13 @@ Release:	22.04
 Codename:	jammy
 ~~~
 
+~~~
+sudo docker pull rhasspy/wyoming-piper
+sudo docker pull rhasspy/wyoming-whisper
+sudo docker pull rhasspy/wyoming-openwakeword
+~~~
+
+
 ## step 1.Docker run wyoming-piper  wyoming-whisper  wyoming-openwakeword
 
 
@@ -61,7 +68,23 @@ https://cn.bing.com/translator/?ref=TThis&text=nabu+english+study&from=en&to=ZH-
 
 turn off the light
 
+**Useful links**
 
+Part 1 - Local Voice in Home Assistant core
+
+https://blog.matterxiaomi.com/blog/voice-homeassistant/
+
+Part 2 - Run whisper on external server
+
+https://blog.matterxiaomi.com/blog/run-whisper-on-external-server/
+
+Part 3 - Run piper on external server
+
+https://blog.matterxiaomi.com/blog/run-piper-on-external-server/
+
+Part 4 - Run wakeword on external server
+
+https://blog.matterxiaomi.com/blog/run-wakeword-on-external-server/
 
 
 
