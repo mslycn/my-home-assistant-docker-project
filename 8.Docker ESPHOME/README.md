@@ -1,5 +1,5 @@
 
-## Running Esphome in a docker container
+## Install Esphome in a docker container
 
 docker pull ghcr.io/esphome/esphome:stable
 
@@ -23,5 +23,7 @@ Useful links
 Complete Docker ESPHome Installation Guide
 
 https://www.msly.cn/boards/topic/38216/complete-docker-esphome-installation-guide
+
+https://www.matterxiaomi.com/boards/topic/40237/docker-esphome-using-docker-compose
 
 https://chelmiki.com/posts/installing-and-configuring-esphome/

@@ -11,6 +11,18 @@ Speed-up Home Assistant by moving the database to memory
 http://localhost:4999/boards/topic/13373/optimize-your-home-assistant-database
 
 
+## Docker performance issues
+
+实际上真正内存泄漏只有hass本身，因为本身hass就是docker;docker其实性能很低，无非是用的方便一些
+
+
+
+http://localhost:4999/boards/topic/38181/ha-docker-dead-docker-performance-issues
+
+
+
+## Optimize Your Home Assistant Docker
+
 /var/lib/containerd
 
 
@@ -48,7 +60,7 @@ MiB Swap:    200.0 total,    151.7 free,     48.2 used.    698.7 avail Mem
 sudo git push -u origin main
 ~~~
 
- cpu 100%
+cpu 100%
 ~~~
 top
 top - 22:42:51 up 7 min,  3 users,  load average: 0.58, 0.56, 0.35
@@ -65,6 +77,23 @@ MiB Swap:    200.0 total,    150.0 free,     50.0 used.    557.1 avail Mem
     474 avahi     20   0    7360   2944   2560 S   0.3   0.3   0:00.72 avahi-daemon                                 
    1621 root      20   0       0      0      0 I   0.3   0.0   0:00.01 kworker/u12:0-writeback                      
       1 root      20   0  168544   9316   7452 S   0.0   1.0   0:07.41 systemd     
-
-
 ~~~
+
+
+docker restart ha
+
+启动的初期cpu 100%，然后降低下来了
+~~
+top
+top - 23:42:00 up 12 min,  2 users,  load average: 0.45, 1.18, 0.90
+Tasks: 158 total,   1 running, 157 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.5 us,  0.4 sy,  0.0 ni, 93.8 id,  0.2 wa,  0.0 hi,  0.1 si,  0.0 st 
+MiB Mem :    907.3 total,     62.9 free,    607.1 used,    293.9 buff/cache     
+MiB Swap:    200.0 total,    165.9 free,     34.1 used.    300.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                      
+   1712 root      20   0 1332392 485160  61056 S  19.9  52.2   2:08.12 python3                                      
+    705 root      20   0 2111976  30540   8576 S   2.0   3.3   1:04.61 dockerd                                      
+   1545 root      20   0       0      0      0 I   0.3   0.0   0:00.04 kworker/1:0-mm_percpu_wq                     
+   1737 root      20   0   11712   4864   2816 R   0.3   0.5   0:02.97 top                      
+~~

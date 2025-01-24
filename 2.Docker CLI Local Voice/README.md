@@ -1,4 +1,6 @@
 
+Ubuntu 22.04.5 LTS on vultr
+
 lsb_release -a
 ~~~
 No LSB modules are available.
@@ -9,17 +11,22 @@ Codename:	jammy
 ~~~
 
 ## step 1.Docker run wyoming-piper  wyoming-whisper  wyoming-openwakeword
-docker ps -a
+
 
 ~~~
+docker run -it -p 10200:10200 -v /path/to/local/data:/data rhasspy/wyoming-piper     --voice en_US-lessac-medium
+docker run -it -p 10300:10300 -v /path/to/local/data:/data rhasspy/wyoming-whisper     --model tiny-int8 --language en
+docker run -it -p 10400:10400 rhasspy/wyoming-openwakeword     --preload-model 'ok_nabu'
+~~~
 
+docker ps -a
+
+output
+~~~
 CONTAINER ID   IMAGE                          COMMAND                  CREATED         STATUS         PORTS                                           NAMES
 1ee50dbb7a33   rhasspy/wyoming-piper          "bash /run.sh --voic…"   7 minutes ago   Up 7 minutes   0.0.0.0:10200->10200/tcp, :::10200->10200/tcp   nice_hofstadter
 01b832193e61   rhasspy/wyoming-openwakeword   "bash /run.sh --prel…"   7 hours ago     Up 7 hours     0.0.0.0:10400->10400/tcp, :::10400->10400/tcp   gallant_engelbart
 0389595d9f22   rhasspy/wyoming-whisper        "bash /run.sh --mode…"   8 hours ago     Up 8 hours     0.0.0.0:10300->10300/tcp, :::10300->10300/tcp   nostalgic_jang
-
-
-
 ~~~
 
 ## step 2.Wyoming Protocol Integration
