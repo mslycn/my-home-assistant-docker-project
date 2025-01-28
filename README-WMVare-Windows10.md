@@ -26,7 +26,7 @@ enable access github.com  from internet
 edit /etc/hosts
 
 enable download and install software from internet
-edit /source.list
+edit /etc/apt/sources.list
 ~~~
 
 

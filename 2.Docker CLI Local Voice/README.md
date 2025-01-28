@@ -10,6 +10,10 @@ Release:	22.04
 Codename:	jammy
 ~~~
 
+## Requirements
+
+64bit OS only
+
 ~~~
 sudo docker pull rhasspy/wyoming-piper
 sudo docker pull rhasspy/wyoming-whisper
@@ -89,19 +93,46 @@ https://blog.matterxiaomi.com/blog/run-wakeword-on-external-server/
 
 
 
+## penAI Whisper vs faster-whisper vs wyoming-faster-whisper vs whisper add on
 
-## OpenAI的Whisper模型
+### OpenAI的Whisper模型
 
-## faster-whisper
+https://github.com/OpenAI/whisper
 
-faster-whisper是基于OpenAI的Whisper模型的实现。faster-whisper的核心优势在于其能够在保持原有模型准确度的同时，大幅提升处理速度，。
+### faster-whisper
+
+faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This implementation is up to 4 times faster than openai/whisper for the same accuracy while using less memory. The efficiency can be further improved with 8-bit quantization on both CPU and GPU.
+
+faster-whisper是基于OpenAI的Whisper模型的实现。faster-whisper的核心优势在于其能够在保持原有模型准确度的同时，大幅提升处理速度。是一个使用 CTranslate2 重新实现的 OpenAI Whisper 模型，旨在提高转录速度和效率。
+
+它显著提高了处理速度，与原始 Whisper 模型相比，保持了相同的准确性的同时，速度提升了最多 4 倍，并且降低了内存使用量。
+
+此外，它支持 CPU 和 GPU 上的 8 位量化，进一步优化效率。
 
 https://github.com/SYSTRAN/faster-whisper
 
-## wyoming-faster-whisper
+### wyoming-faster-whisper
 
 wyoming-faster-whisper 是基于faster-whisper模型添加wyoming协议的实现。wyoming协议为home assistant自动发现所用。
 
 Wyoming protocol server for the faster-whisper[https://github.com/SYSTRAN/faster-whisper] speech to text system.
 
 https://github.com/rhasspy/wyoming-faster-whisper
+
+
+
+Useful links
+
+
+1. https://github.com/SYSTRAN/faster-whisper项目介绍
+
+https://www.cnblogs.com/ghj1976/p/18034191/fasterwhisper
+
+
+## Improve whisper performance on  hardware
+
+GPU
+
+TPU
+
+https://community.home-assistant.io/t/improve-whisper-performance-on-intel-hardware/699427/12
