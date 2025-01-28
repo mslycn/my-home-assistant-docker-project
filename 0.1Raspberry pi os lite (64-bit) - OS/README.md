@@ -19,6 +19,8 @@ BUG_REPORT_URL="https://bugs.debian.org/"
 
 ~~~
 
+print information about the running distribution
+
 lsb_release -a 
 ~~~
 No LSB modules are available.
@@ -27,6 +29,8 @@ Description:	Debian GNU/Linux 12 (bookworm)
 Release:	12
 Codename:	bookworm
 ~~~
+
+subversion IDs for Debian
 
 cat /etc/debian_version
 ~~~
@@ -40,7 +44,7 @@ cat /proc/version
 Linux version 6.6.20+rpt-rpi-v8 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT Debian 1:6.6.20-1+rpt1 (2024-03-07)
 ~~~
 
-
+Kernel version
 
 uname -r
 ~~~
@@ -50,6 +54,21 @@ uname -r
 cat /etc/issue 
 ~~~
 Debian GNU/Linux 12 \n \l
+~~~
+
+Is your Raspberry Pi running a 64 or 32 bits OS?
+~~~
+uname -m
+~~~
+
+## sudo nano /etc/apt/sources.list
+
+cat /etc/apt/sources.list.d/raspi.list
+~~~
+ cat /etc/apt/sources.list.d/raspi.list
+deb http://archive.raspberrypi.com/debian/ bookworm main
+# Uncomment line below then 'apt-get update' to enable 'apt-get source'
+#deb-src http://archive.raspberrypi.com/debian/ bookworm main
 ~~~
 
 
