@@ -1,5 +1,11 @@
 
-Ubuntu 22.04.5 LTS on vultr
+Setting up a fully local voice assistant.Local Install via Docker Cli
+
+Ubuntu 22.04.5 LTS on vultr.
+
+# chapter 1 - Systems without an NVidia GPU
+
+## OS
 
 lsb_release -a
 ~~~
@@ -10,7 +16,7 @@ Release:	22.04
 Codename:	jammy
 ~~~
 
-## Requirements
+## Install Requirements 
 
 64bit OS only
 
@@ -42,7 +48,9 @@ CONTAINER ID   IMAGE                          COMMAND                  CREATED  
 
 ## step 2.Wyoming Protocol Integration
 
-integrate all of above to home assistant via  Wyoming Protocol Integration
+integrate all of above to home assistant via  Wyoming Protocol Integration.
+
+looking at Home Assistant's Whisper integration.
 
 所有服务启动后，需要在 Home Assistant 中安装集成
 
@@ -120,6 +128,16 @@ Wyoming protocol server for the faster-whisper[https://github.com/SYSTRAN/faster
 https://github.com/rhasspy/wyoming-faster-whisper
 
 
+accuracy 
+
+speed
+
+background noise
+
+accuracy - I tried the bigger model and accuracy better indeed. using the en medium-int8 model
+speed - I think that being able to run whisper leveraging GPU 
+
+
 
 Useful links
 
@@ -129,10 +147,40 @@ Useful links
 https://www.cnblogs.com/ghj1976/p/18034191/fasterwhisper
 
 
-## Improve whisper performance on  hardware
+# chapter 2 - Ubuntu with an NVidia GPU
+
+if u dont have gpu it's slower, especially celeron is lower end cpu, u should use tiny.en model if unable to get powerful hardware.
+
+For small models, it doesn't matter much because the speed differences are tiny. But for larger models (more accurate), a GPU can get done in milliseconds what takes a CPU several seconds.
+
+
+## Improve whisper performance on hardware
+
+
+
+
+Systems without an NVidia GPU
+
+Ubuntu with an NVidia GPU
+
+Improving response times when using GPU
+
 
 GPU
 
 TPU
 
+The only thing i had to do was to install the gpu drivers and nvidia container toolkit to the docker host and change the whisper image to a CUDA supporting one
+
+useful links
+
 https://community.home-assistant.io/t/improve-whisper-performance-on-intel-hardware/699427/12
+
+https://gloveboxes.github.io/OpenAI-Whisper-Transcriber-Sample/Whisper-Server/Whisper-Server-no-GPU/
+
+
+Exposing devices to Voice assist
+exposed entities to Voice assistant
+
+Create aliases
+
