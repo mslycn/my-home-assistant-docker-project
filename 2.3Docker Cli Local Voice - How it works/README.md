@@ -1,8 +1,8 @@
 
 You can select Voice Assistant Pipeline for recognition process:
-
+~~~
 Speaker(audio)=>WAKE(wakeword addon) =>audio=> STT（whipser addon） => NLP(text ,openai) =>Conversation=>Intent recognition=>action=> TTS(result piper)
-
+~~~
 https://www.matterxiaomi.com/boards/topic/14594/voice-in-home-assistant#20849
 
 
