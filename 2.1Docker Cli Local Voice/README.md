@@ -1,7 +1,10 @@
+# Setting Up Whisper and Piper with Docker on Linux
 
 Setting up a fully local voice assistant.Local Install via Docker Cli
 
 Ubuntu 22.04.5 LTS on vultr.
+
+I’m running it on Ubuntu 20.04 server
 
 # chapter 1 - Systems without an NVidia GPU
 
@@ -20,6 +23,12 @@ Codename:	jammy
 
 64bit OS only
 
+Install Docker on Linux
+
+Download and install Docker from the official Docker website.
+
+
+
 ~~~
 sudo docker pull rhasspy/wyoming-piper
 sudo docker pull rhasspy/wyoming-whisper
@@ -35,6 +44,10 @@ docker run -it -p 10200:10200 -v /path/to/local/data:/data rhasspy/wyoming-piper
 docker run -it -p 10300:10300 -v /path/to/local/data:/data rhasspy/wyoming-whisper     --model tiny-int8 --language en
 docker run -it -p 10400:10400 rhasspy/wyoming-openwakeword     --preload-model 'ok_nabu'
 ~~~
+Note
+
+Adjust /path/to/local/data  to a directory on your Linux machine where Whisper can store its data.
+
 
 docker ps -a
 
