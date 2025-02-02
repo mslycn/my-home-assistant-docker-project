@@ -1,3 +1,21 @@
+## containerd vs containerd  | What are the differences?
+
+Docker与containerd的关系与区别 
+
+Docker和containerd的不同之处在于它们的范围：Docker是一个完整的容器化平台，提供了构建、部署和运行容器的工具，而containerd是一个更轻量级的运行时，专注于管理容器的生命周期.
+
+Docker 实际上是由多个组件构成的，其中之一就是 containerd。从 Docker 1.11 版本开始，Docker 的容器运行时部分（即实际负责启动、停止、管理容器的部分）由 containerd 承担。因此，containerd 是 Docker 内部的一个组件，负责容器的生命周期管理（如启动、停止、暂停等）。
+
+1.2containerd 的功能
+
+containerd 是一个 容器运行时（Container Runtime），专注于容器的生命周期管理，不包含构建镜像、容器编排等功能。它提供了容器的管理功能（如容器创建、启动、停止、删除）以及镜像的拉取、存储等基础功能。containerd 是一个轻量级、专注于容器管理的工具，适用于容器编排系统（如 Kubernetes）和大型生产环境。
+
+1.3 Docker 的功能
+
+Docker 是一个包含了完整工具链的容器管理平台，不仅包括容器运行时（containerd 提供的功能），还包括镜像构建、镜像管理、容器编排、CI/CD 集成等功能。Docker 使用 containerd 作为容器运行时，但它封装了更多的功能（如镜像构建、容器编排、网络管理等），使得用户能够更加方便地管理容器应用。简而言之，containerd 是 Docker 的底层容器运行时，它提供容器启动、停止等管理功能，而 Docker 提供了更加丰富的工具和接口（如镜像构建、容器编排、应用发布等），使得用户能够以更简单的方式管理容器化应用。（containerd是docker的一个底层服务，但docker并不是只有这一个底层服务，而是有多个底层服务。）
+
+https://www.cnblogs.com/junnan/p/18589605
+
 
 docker system df -v 
 
@@ -10,6 +28,7 @@ CONTAINER ID   IMAGE                                                     COMMAND
 
 ~~~
 
+## /var/lib/docker
 
 1. Docker存储结构 /var/lib/docker
 
@@ -76,4 +95,4 @@ https://www.cnblogs.com/deali/p/18612139
 
 
 
-~~~
+
