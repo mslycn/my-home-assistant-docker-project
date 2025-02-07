@@ -3,7 +3,9 @@
 
 This article explains how to Run whisper piper and wakeword with docker cli on external server.
 
-
+Install Whisper and start the docker with the default model “tiny-int8”.
+Install piper and start it
+Install openwakeword and start it
 
 
 # Setting Up Whisper and Piper with Docker on Linux
