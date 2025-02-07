@@ -4,7 +4,9 @@ This Quickstart Guide describes how to run Home Assistant Container on Debian12 
 
 # How to run Home Assistant Container on Debian12 using Docker: A Beginner's Guide
 
+Chapter 1. Install Raspberry Pi OS Lite (64-bit) 
 
+Not all versions are compatible with all Raspberry Pi models. For example, the Raspberry Pi 4 can run only on Raspberry Pi OS 10 or more, and the Raspberry Pi 3B+ requires Raspberry Pi OS 9 or 10, etc.
 
 
 # How to run Home Assistant Container on Debian12 using Docker
@@ -23,8 +25,19 @@ https://github.com/Crazysiri/chineseholiday
 
 https://github.com/Crazysiri/chineseholiday_card
 
+- How to know which Raspberry Pi OS is installed?
+
+- Raspberry Pi OS versions history
+
+- Is your Raspberry Pi running a 64 or 32 bits OS?
 
 
+
+## Where to buy？
+
+Best microSD Cards for Raspberry Pi
+
+https://www.matterxiaomi.com/boards/topic/24025/best-microsd-cards-for-raspberry-pi
 
 
 

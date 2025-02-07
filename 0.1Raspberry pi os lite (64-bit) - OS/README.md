@@ -65,7 +65,7 @@ uname -m
 
 cat /etc/apt/sources.list.d/raspi.list
 ~~~
- cat /etc/apt/sources.list.d/raspi.list
+cat /etc/apt/sources.list.d/raspi.list
 deb http://archive.raspberrypi.com/debian/ bookworm main
 # Uncomment line below then 'apt-get update' to enable 'apt-get source'
 #deb-src http://archive.raspberrypi.com/debian/ bookworm main
@@ -79,6 +79,14 @@ How to Configure Static IP Address on Debian 12
 使用nmcli设置静态IPv4地址
 
 nmcli con show
+~~~
+NAME                UUID                                  TYPE      DEVICE          
+Wired connection 1  33d44833-54da-3fa3-9a4c-0357e50c6c34  ethernet  eth0            
+lo                  481d0abe-4586-4287-87bc-69cadce3a63d  loopback  lo              
+br-424eb587074d     5632186d-34b6-4d73-a45b-80583dbac37a  bridge    br-424eb587074d 
+docker0             53271779-f1f5-4908-add4-c38a91a90f90  bridge    docker0  
+~~~
+
 
 
 https://blog.csdn.net/gongchenyu/article/details/134675480
