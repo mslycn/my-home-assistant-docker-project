@@ -1,5 +1,8 @@
-This Quickstart Guide describes how to run Home Assistant Container on Debian12 using Docker.
+This Quickstart Guide describes how to run Home Assistant Container on Debian 12 using Docker.
 
+NOTE:
+
+Please note that in my case I am using Debian 12 LTS Server. You might be using some different Linux distribution. It might not be same for you.
 
 
 # How to run Home Assistant Container on Debian12 using Docker: A Beginner's Guide

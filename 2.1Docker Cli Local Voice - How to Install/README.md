@@ -1,3 +1,10 @@
+My Configuration
+
+Homeassistant Docker 2025.1.4  on rpi 
+ESPhome installed also via docker
+ESP32-S3-BOX-3B
+
+
 
 # Chapter 1 - Systems without an NVidia GPU
 
@@ -56,7 +63,7 @@ docker run -it -p 10400:10400 rhasspy/wyoming-openwakeword     --preload-model '
 ~~~
 Note
 
-Adjust /path/to/local/data  to a directory on your Linux machine where Whisper can store its data.
+Adjust /path/to/local/data  to a directory on your Linux machine where Whisper can store its model data.
 
 
 docker ps -a

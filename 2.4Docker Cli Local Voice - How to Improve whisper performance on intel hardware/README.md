@@ -1,19 +1,19 @@
-accuracy 
-
-speed
+## accuracy vs speed
 
 background noise
 
 accuracy - I tried the bigger model and accuracy better indeed. using the en medium-int8 model
 speed - I think that being able to run whisper leveraging GPU 
 
+## Note
+wyoming-faster-whisper,如果没有英伟达显卡或未配置好CUDA环境，不要使用 large/large-v3 模型，可能导致内存耗尽死机.
 
+## 
+- Improve whisper performance on gpu hardware
 
+CUDA 加速支持
 
-Improve whisper performance on gpu hardware
-
-
-Improve whisper performance on intel hardware
+- Improve whisper performance on intel hardware
 
 
 # chapter 2 - Ubuntu with an NVidia GPU
@@ -30,7 +30,7 @@ For small models, it doesn't matter much because the speed differences are tiny.
 
 Systems without an NVidia GPU
 
-Ubuntu with an NVidia GPU
+Ubuntu System with an NVidia GPU
 
 Improving response times when using GPU
 
@@ -40,6 +40,14 @@ GPU
 TPU
 
 The only thing i had to do was to install the gpu drivers and nvidia container toolkit to the docker host and change the whisper image to a CUDA supporting one
+
+
+Nvidia 显卡
+
+先升级显卡驱动到最新，
+然后去安装对应的 CUDA Toolkit 和 cudnn for CUDA11.X。
+
+
 
 useful links
 
