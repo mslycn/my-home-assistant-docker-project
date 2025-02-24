@@ -1,8 +1,11 @@
+I want fully local voice services
+
 My Configuration
+
 
 Homeassistant Docker 2025.1.4  on rpi 
 ESPhome installed also via docker
-ESP32-S3-BOX-3B
+Voice Satellite:ESP32-S3-BOX-3B
 
 
 

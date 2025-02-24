@@ -1,20 +1,3 @@
-
-## Required Hardware
-
-How To Add Bluetooth Support
-
-
-
-### Required Hardware For The ESPHome Bluetooth Proxy
-
-Bluetooth Proxy In Home Assistant Using ESPHome
-
-https://www.simplysmart.house/blog/bluetooth-proxy-home-assistant-epshome
-
-
-## Required Software
-
-
 I have flashed my sonoff dongle-e with an openthread firmware (thread only). I believe this is the same situation like you. The dongle will act as a border router. Here are what I have:
 
 ## Docker containers:
@@ -43,6 +26,25 @@ connect to the matter container, default websocket address doesn’t need to be 
 When all of these are configured correctly, you can add matter devices with the homeassistant app on your smart phone.
 
 https://community.home-assistant.io/t/using-matter-and-thread-in-a-dockerized-ha-instance/721088/7?u=msly
+
+
+## Required Hardware
+
+How To Add Bluetooth Support
+
+
+
+### Required Hardware For The ESPHome Bluetooth Proxy
+
+Bluetooth Proxy In Home Assistant Using ESPHome
+
+https://www.simplysmart.house/blog/bluetooth-proxy-home-assistant-epshome
+
+
+## Required Software
+
+
+
 
 
 
