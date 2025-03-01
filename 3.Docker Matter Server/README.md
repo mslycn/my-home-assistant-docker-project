@@ -44,6 +44,17 @@ https://www.simplysmart.house/blog/bluetooth-proxy-home-assistant-epshome
 ## Required Software
 
 
+docker pull ghcr.io/home-assistant-libs/python-matter-server:stable
+
+
+docker run -d \
+  --name matter-server \
+  --restart=unless-stopped \
+  --security-opt apparmor=unconfined \
+  -v $(pwd)/data:/data \
+  --network=host \
+  ghcr.io/home-assistant-libs/python-matter-server:stable
+
 
 
 

@@ -13,6 +13,13 @@ $ docker run --rm --net=host --name esphome -v /data/docker/esphome/:/config -d 
 sudo ufw allow 6052
 ~~~
 
+~~~
+sudo apt install docker-compose
+
+cd /data/docker/esphome
+docker-compose up -d
+~~~
+
 we can access ESPHome by typing our server address and port 6052 in our browser: http://192.168.1.3:6052
 
 
