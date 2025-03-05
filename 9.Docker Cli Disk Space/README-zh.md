@@ -1,12 +1,16 @@
 ## containerd vs containerd  | What are the differences?
 
-Docker与containerd的关系与区别 
+- docker和containerd 的工作目录默认都在 /var/lib 下
+
+- Docker与containerd的关系与区别 
 
 Docker和containerd的不同之处在于它们的范围：Docker是一个完整的容器化平台，提供了构建、部署和运行容器的工具，而containerd是一个更轻量级的运行时，专注于管理容器的生命周期.
 
-Docker 实际上是由多个组件构成的，其中之一就是 containerd。从 Docker 1.11 版本开始，Docker 的容器运行时部分（即实际负责启动、停止、管理容器的部分）由 containerd 承担。因此，containerd 是 Docker 内部的一个组件，负责容器的生命周期管理（如启动、停止、暂停等）。
+Docker 实际上是由多个组件构成的，其中之一就是 containerd。
 
-1.2containerd 的功能
+从 Docker 1.11 版本开始，Docker 的容器运行时部分（即实际负责启动、停止、管理容器的部分）由 containerd 承担。因此，containerd 是 Docker 内部的一个组件，负责容器的生命周期管理（如启动、停止、暂停等）。
+
+1.2  containerd 的功能
 
 containerd 是一个 容器运行时（Container Runtime），专注于容器的生命周期管理，不包含构建镜像、容器编排等功能。它提供了容器的管理功能（如容器创建、启动、停止、删除）以及镜像的拉取、存储等基础功能。containerd 是一个轻量级、专注于容器管理的工具，适用于容器编排系统（如 Kubernetes）和大型生产环境。
 

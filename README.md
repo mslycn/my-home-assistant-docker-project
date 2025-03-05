@@ -4,6 +4,9 @@ NOTE:
 
 Please note that in my case I am using Debian 12 LTS Server. You might be using some different Linux distribution. It might not be same for you.
 
+Part 1 - Raspberry Pi OS Lite (64-bit) home assistant docker on a Raspberry PI project
+https://blog.matterxiaomi.com/blog/raspberry-pi-part1/
+
 
 # How to run Home Assistant Container on Debian12 using Docker: A Beginner's Guide
 
@@ -33,6 +36,19 @@ https://github.com/Crazysiri/chineseholiday_card
 - Raspberry Pi OS versions history
 
 - Is your Raspberry Pi running a 64 or 32 bits OS?
+
+
+## docker
+~~~
+docker pull nodered/node-red
+
+docker pull rhasspy/wyoming-whisper
+
+docker pull rhasspy/wyoming-piper
+
+docker pull homebridge/homebridge
+
+~~~
 
 
 

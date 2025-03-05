@@ -317,7 +317,10 @@ used in this list are for identification purposes only.
 Use of these names, logos, trademarks, and brands does not imply endorsement.
 
 
-Useful links
+Guide
 
 Installing Home Assistant Using Docker: A Step-by-Step Guide
 https://www.thetechnerd.org/articles/installing-home-assistant-using-docker-a-step-by-step-guide
+
+Part 1 - Raspberry Pi OS Lite (64-bit) home assistant docker on a Raspberry PI project
+https://blog.matterxiaomi.com/blog/raspberry-pi-part1/
