@@ -1,6 +1,8 @@
 
 ## OS information
 
+Debian is the only officially supported Linux distro for use with Home Assistant.
+
 operating system
 
 cat /etc/os-release

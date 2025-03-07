@@ -72,7 +72,7 @@ Running Home Assistant in a Docker Container
 **on Home Assistant in a Docker Container side**
 Install HACS
 
-
+Install Integration
 
 
 ## How to use
