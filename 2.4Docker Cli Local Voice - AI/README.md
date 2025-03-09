@@ -25,7 +25,7 @@ For small models, it doesn't matter much because the speed differences are tiny.
 
 ## Improve whisper performance on hardware
 
-
+通过Whisper的gpu模式来进行推理，模型选择medium，硬件要求是最低6G显存
 
 
 Systems without an NVidia GPU
@@ -54,4 +54,7 @@ useful links
 https://community.home-assistant.io/t/improve-whisper-performance-on-intel-hardware/699427/12
 
 https://gloveboxes.github.io/OpenAI-Whisper-Transcriber-Sample/Whisper-Server/Whisper-Server-no-GPU/
+
+
+费电是其次，因为大部分时间显卡都没有工作只有使用语音的是才会工作，一天工作不到30分钟。不使用的时候显卡大概6-9w功率。主要是显卡太贵了。3060我都是买的
 

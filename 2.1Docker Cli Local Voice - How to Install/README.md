@@ -51,7 +51,7 @@ Download and install Docker from the official Docker website.
 
 ~~~
 sudo docker pull rhasspy/wyoming-piper
-sudo docker pull rhasspy/wyoming-whisper
+sudo docker pull rhasspy/wyoming-whisper   -> Implement STT service based on wyoming-faster-whisper
 sudo docker pull rhasspy/wyoming-openwakeword
 ~~~
 

@@ -1,5 +1,8 @@
 This article explains how a customer can implement a local voice assistant.Local solution based on Whisper and Piper. 
 
+First,you need to install those,  via  docker. Then piper is (by default) port 10200 and whisper (by default) port 10300.
+
+Next,In the Wyoming integration popup you should put once piper host and port and adding a second Wyoming integration with whisper host and port.
 
 You can select Voice Assistant Pipeline for recognition process:
 ~~~
