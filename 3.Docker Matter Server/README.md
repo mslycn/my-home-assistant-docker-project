@@ -1,3 +1,5 @@
+I am running Home Assistant on a Raspberry Pi in a docker container.
+
 Docker Matter Server
 
 
@@ -7,9 +9,14 @@ I have flashed my sonoff dongle-e with an openthread firmware (thread only). I b
 
 - homeassistant container
 
-- openthread/otbr container
+- openthread/otbr container -->run OTBR on the pi using docker
 connect thread border router to the local network
 Chạy Docker OTBR  |  OpenThread
+
+Thread 设备
+Thread 设备向 Thread 边界路由器注册自己的服务，接着 Thread 边界路由器通过多播 DNS 向 Wi-Fi 网络广播所有 Thread 设备的服务信息。
+
+Thread 边界路由器还实现了 DNS-SD 发现代理 (Discovery Proxy)，这样 Thread 设备也可以发现 Wi-Fi 网络中的服务。
 
 - python-matter-server container
 matter controller server = matter add-on
@@ -17,8 +24,8 @@ GitHub - home-assistant-libs/python-matter-server: Python server to interact wit
 
 ## Intergrations:
 
-- open thread border router integration
-not sure if it’s really necessary, use http://localhost:8081 by default to connect to the otbr container. (don’t know if this port 8081 can be changed)
+- open thread border router integration -->connect thread border router to the local network
+use http://localhost:8081 by default to connect to the otbr container.
 
 - Thread integration
 used to create thread network, border router must be assigned to the homeassistant thread network

@@ -1,5 +1,7 @@
 This Quickstart Guide describes how to run Home Assistant Container on Debian 12 using Docker.
 
+Home assistant is a standalone and self-hosted implementation of the central server used by smart devices. Home assistant allows you to have full control of your smart devices, without the  app talking to the smart device's servers and transmitting data outside of your home.
+
 NOTE:
 
 Please note that in my case I am using Debian 12 LTS Server. You might be using some different Linux distribution. It might not be same for you.
@@ -39,6 +41,7 @@ https://github.com/Crazysiri/chineseholiday_card
 
 
 ## docker
+It handles multiple docker like Node-RED, InfluxDB, Grafana, ESPHome, NUT, Z-WaveJS UI, Zigbee2MQTT, Matter Server, Mqtt,etc
 ~~~
 docker pull nodered/node-red
 

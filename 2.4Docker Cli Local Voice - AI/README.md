@@ -25,6 +25,8 @@ For small models, it doesn't matter much because the speed differences are tiny.
 
 ## Improve whisper performance on hardware
 
+Do not expect any significant change in the operating speed. In any case, large models need a GPU. And small models generate unstable recognition outcomes.
+
 通过Whisper的gpu模式来进行推理，模型选择medium，硬件要求是最低6G显存
 
 
@@ -57,4 +59,11 @@ https://gloveboxes.github.io/OpenAI-Whisper-Transcriber-Sample/Whisper-Server/Wh
 
 
 费电是其次，因为大部分时间显卡都没有工作只有使用语音的是才会工作，一天工作不到30分钟。不使用的时候显卡大概6-9w功率。主要是显卡太贵了。3060我都是买的
+
+- Wyoming Whisper STT docker container with Nvidia GPU support for Home-Assistant
+https://github.com/slackr31337/wyoming-whisper-gpu
+
+https://github.com/slackr31337/wyoming-piper-gpu/
+
+
 
