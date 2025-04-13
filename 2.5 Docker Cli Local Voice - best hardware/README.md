@@ -1,4 +1,4 @@
-
+# Home Assistant开源硬件语音助手设备
 
 1. MIC在安静环境下收音距离
 2. MIC在嘈杂环境下能否排除背景杂音（例如房间里在放电视）
@@ -20,3 +20,21 @@
 4. 
 用INMP441模块和ESP32可采集到声音，接下来就是与HASS的集成，怎么处理
 打算用voice_assistant这个方案
+
+
+
+OpenAI Whisper + ChatGPT
+
+
+Home Assistant Cloud
+
+
+Sherpa Onnx
+
+
+
+
+【远程系列】HA Cloud登录流程分析 on wechat
+
+
+

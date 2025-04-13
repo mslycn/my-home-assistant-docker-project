@@ -1,3 +1,7 @@
+## Hardware
+直接用斐讯n1做ha服务器，j3160小主机装了个黑群在里面运行esphome编译固件，日常简单使用挺稳定的.
+
+
 
 ## Install Esphome in a docker container
 

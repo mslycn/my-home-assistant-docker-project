@@ -1,5 +1,21 @@
 I am running Home Assistant on a Raspberry Pi in a docker container.
 
+目前 Matter 在海外得到几乎所有大的生态平台厂家的支持，包括：
+Apple
+Google
+Amazon
+Samsung
+Philips Hue
+
+Matter 使用一个基于 IP 的协议栈，支持以下几种网络传输方式：
+
+Wi-Fi
+Thread
+以太网
+
+而 BLE 在 Matter 中目前仅仅只是承担辅助配网的角色
+
+
 Docker Matter Server
 
 
@@ -67,6 +83,16 @@ docker run -d \
 
 
 
-
+3. Matter server 
+	- [让设备发声——朗读文字 HomePod mini]    edge tts
+	- [让设备发声——朗读文字 小度音箱]         edge tts
+	- [让设备发声——朗读文字 小爱player]
+	- [让设备发声——朗读文字 小爱pro老版]      edge tts
+	- [HA Docker with SLZB-07Mg24 Matter/Thread USB](https://community.home-assistant.io/t/ha-docker-with-slzb-07mg24-matter-thread-usb/834547)  
+	- [ghcr.io/ownbee/hass-otbr-docker](ghcr.io/ownbee/hass-otbr-docker)
+	- [SLZB-07Mg24 USB stick](https://community.home-assistant.io/t/running-otbr-in-docker/835125)
+	- [VMware + Ubuntu 22.04](https://blog.csdn.net/xingzhibo/article/details/132333807)   VMware + Ubuntu 22.04
+	- [VirtualBox + Ubuntu 22.04](https://www.matterxiaomi.com/blog/matter-gateway-part-2//blog/matter-gateway-part-2/) VirtualBox (with Ubuntu 20.04 LTS) installed on Windows 10. 
+	- [mDNS系列](https://www.iaspnetcore.com/blog/tag/mDNS)
 
 

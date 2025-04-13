@@ -94,6 +94,10 @@ https://docs.dockerd.com.cn/reference/cli/docker/config/create/
 
 ## Docker磁盘空间管理
 
+清空一个特定容器的日志文件：
+
+sudo truncate -s 0 /var/lib/docker/containers/<container-id>/<container-id>-json.log
+
 https://www.cnblogs.com/deali/p/18612139
 
 

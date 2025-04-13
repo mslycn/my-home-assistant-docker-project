@@ -1,0 +1,1 @@
+search 如何给Home Assistant添加一个开源硬件语音助手设备  ESP32-S3-BOX-3  on wechat

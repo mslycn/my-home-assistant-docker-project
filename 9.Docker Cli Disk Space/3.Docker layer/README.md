@@ -1,13 +1,25 @@
-Filesystem layers structure
+## Docker的overlay2是什么
+
+Docker的存储驱动是用来管理容器和镜像的文件系统的。之前Docker有其他驱动，比如aufs、devicemapper、OverlayFS。
+
+
+overlay2基于OverlayFS，这个文件系统是联合文件系统的一种，允许将多个目录挂载到同一个目录下，呈现合并后的视图。这样在容器层和镜像层之间实现高效的分层管理。
+
+镜像层是只读的，容器层是可写的，修改时会用写时复制（Copy-on-Write）的机制。这样节省空间，加快启动时间。
+
+overlay2具体如何组织这些层呢？比如lowerdir、upperdir、merged等目录的作用。
+
+## Filesystem layers structure
 
 一个镜像是由多个镜像层（layer）组成的，而相同的镜像层本地只会存储一份，所以，真实情况下，占用的物理存储空间大小，可能会小于逻辑大小。
 
 The /var/lib/docker/overlay2 directory is where Docker stores all these layers on your host system.
 
-Overlay and Overlay2
+- Overlay and Overlay2
 
 Docker has two versions of the Overlay file system: Overlay and Overlay2. Overlay2 is an improved version. 
 
+Docker 的 overlay2 是用于管理容器和镜像文件系统的一种存储驱动（Storage Driver）
 
  132ef461504b
 ~~~
