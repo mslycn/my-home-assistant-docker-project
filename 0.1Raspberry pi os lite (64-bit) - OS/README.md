@@ -1,3 +1,11 @@
+## Hardware Setup
+~~~
+Install Raspberry https://www.raspberrypi.com/software/
+Burn the image to an SD card
+Boot the Raspberry Pi
+Connect to the Raspberry Pi via xshell
+Open a terminal
+~~~
 
 ## OS information
 

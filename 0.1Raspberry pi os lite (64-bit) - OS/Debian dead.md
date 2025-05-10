@@ -182,3 +182,7 @@ truncate -s 0 /var/lib/docker/containers/*/*-json.log
 
 https://ivanzz1001.github.io/records/post/linuxops/2018/04/10/linux-restart-log  ok
 
+
+log
+1.修复全部出错自动化
+

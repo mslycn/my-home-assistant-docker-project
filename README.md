@@ -1,3 +1,5 @@
+# Home Assistant Container series
+
 This Quickstart Guide describes how to run Home Assistant Container on Debian 12 using Docker.
 
 Home assistant is a standalone and self-hosted implementation of the central server used by smart devices. Home assistant allows you to have full control of your smart devices, without the  app talking to the smart device's servers and transmitting data outside of your home.
@@ -40,10 +42,18 @@ https://github.com/Crazysiri/chineseholiday_card
 - Is your Raspberry Pi running a 64 or 32 bits OS?
 
 
-## docker
+## docker series
 It handles multiple docker like Node-RED, InfluxDB, Grafana, ESPHome, NUT, Z-WaveJS UI, Zigbee2MQTT, Matter Server, Mqtt,etc
+
+ run multi separate containers with Kodi, HB and Hass on on a single Pi.
+
 ~~~
 docker pull nodered/node-red
+
+docker pull eclipse-mosquitto
+
+docker pull portainer/portainer
+
 
 docker pull rhasspy/wyoming-whisper
 
@@ -51,8 +61,32 @@ docker pull rhasspy/wyoming-piper
 
 docker pull homebridge/homebridge
 
+docker pull openthread/otbr
+
+docker pull ghcr.io/home-assistant-libs/python-matter-server:stable
+docker pull ghcr.io/home-assistant/home-assistant:2025.3.4
+
+docker pull ghcr.io/esphome/esphome:stable
+
 ~~~
 
+on rpi5
+~~~
+docker pull --platform linux/arm64 openthread/otbr:latest
+docker pull --platform linux/arm64 rhasspy/wyoming-speech-to-phrase:stable
+~~~
+
+## web url and port for docker
+~~~
+node-red
+Open http://localhost:1880
+
+esphome
+Open http://localhost:6052
+
+mqtt
+1883
+~~~
 
 
 ## Where to buy？
@@ -63,7 +97,13 @@ https://www.matterxiaomi.com/boards/topic/24025/best-microsd-cards-for-raspberry
 
 
 
+
 https://www.thetechnerd.org/articles/installing-home-assistant-using-docker-a-step-by-step-guide
+
+Useful links
+
+home assistant docker series
+https://sequr.be/blog/2022/09/home-assistant-container-part-5-node-red/?ref=footer
 
 
 

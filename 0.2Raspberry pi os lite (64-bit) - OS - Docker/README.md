@@ -22,4 +22,5 @@ https://api.github.com/repositories/12888993/releases/latest
 
 ~~~
  "html_url": "https://github.com/home-assistant/core/releases/tag/2025.1.4"
+
 ~~~

@@ -32,7 +32,7 @@ Chạy Docker OTBR  |  OpenThread
 Thread 设备
 Thread 设备向 Thread 边界路由器注册自己的服务，接着 Thread 边界路由器通过多播 DNS 向 Wi-Fi 网络广播所有 Thread 设备的服务信息。
 
-Thread 边界路由器还实现了 DNS-SD 发现代理 (Discovery Proxy)，这样 Thread 设备也可以发现 Wi-Fi 网络中的服务。
+Thread 边界路由器实现了 DNS-SD 发现代理 (Discovery Proxy)，这样 Thread 设备也可以发现 Wi-Fi 网络中的服务。
 
 - python-matter-server container
 matter controller server = matter add-on
@@ -84,15 +84,22 @@ docker run -d \
 
 
 3. Matter server 
-	- [让设备发声——朗读文字 HomePod mini]    edge tts
-	- [让设备发声——朗读文字 小度音箱]         edge tts
-	- [让设备发声——朗读文字 小爱player]
-	- [让设备发声——朗读文字 小爱pro老版]      edge tts
 	- [HA Docker with SLZB-07Mg24 Matter/Thread USB](https://community.home-assistant.io/t/ha-docker-with-slzb-07mg24-matter-thread-usb/834547)  
-	- [ghcr.io/ownbee/hass-otbr-docker](ghcr.io/ownbee/hass-otbr-docker)
 	- [SLZB-07Mg24 USB stick](https://community.home-assistant.io/t/running-otbr-in-docker/835125)
 	- [VMware + Ubuntu 22.04](https://blog.csdn.net/xingzhibo/article/details/132333807)   VMware + Ubuntu 22.04
 	- [VirtualBox + Ubuntu 22.04](https://www.matterxiaomi.com/blog/matter-gateway-part-2//blog/matter-gateway-part-2/) VirtualBox (with Ubuntu 20.04 LTS) installed on Windows 10. 
 	- [mDNS系列](https://www.iaspnetcore.com/blog/tag/mDNS)
+	- [ghcr.io/ownbee/hass-otbr-docker](ghcr.io/ownbee/hass-otbr-docker)
 
+
+
+amd64
+
+https://github.com/ownbee/hass-otbr-docker
+ghcr.io/ownbee/hass-otbr-docker
+
+arm64 and amd64
+	
+https://github.com/D34DC3N73R/hass-otbr-docker
+ghcr.io/d34dc3n73r/hass-otbr-docker
 

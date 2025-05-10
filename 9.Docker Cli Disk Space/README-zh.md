@@ -58,7 +58,13 @@ Build Cache     0         0         0B        0B
 
 ~~~
 
-手动清理
+Overlay2是Docker的存储驱动，用来管理镜像和容器的分层文件系统。当用户使用Docker时，所有的镜像层和容器层都是通过overlay2来处理的，所以这个目录可能会变得很大。
+
+##
+清理Docker的空间应该使用Docker自带的命令，比如docker system prune
+
+
+## 手动清理
 
 可以手动删除/var/lib/docker 目录下的文件和文件夹。
 
@@ -78,7 +84,18 @@ rm -rf /var/lib/docker/networks/*
 rm -rf /var/lib/docker/plugins/*
 
 
+## 彻底清理 Overlay2
+如果确定所有容器和镜像均无用，可彻底重置 Docker：
+~~~
+# 停止 Docker 服务
+sudo systemctl stop docker
 
+# 删除所有 Docker 数据（包括镜像、容器、卷等）
+sudo rm -rf /var/lib/docker/*
+
+# 重启 Docker
+sudo systemctl start docker
+~~~
 
 
 ## /var/run/docker/containerd
