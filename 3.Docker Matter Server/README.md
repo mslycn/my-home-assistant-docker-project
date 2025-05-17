@@ -92,6 +92,7 @@ docker run -d \
 	- [ghcr.io/ownbee/hass-otbr-docker](ghcr.io/ownbee/hass-otbr-docker)
 
 
+在rpi 5，使用 docker 直接拉取官方配置好的OTBR Addon image,修改为docker版
 
 amd64
 
