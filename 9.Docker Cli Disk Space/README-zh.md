@@ -113,7 +113,11 @@ https://docs.dockerd.com.cn/reference/cli/docker/config/create/
 
 清空一个特定容器的日志文件：
 
+~~~
 sudo truncate -s 0 /var/lib/docker/containers/<container-id>/<container-id>-json.log
+
+sudo truncate -s 0 /var/lib/docker/containers/9cdf3ea2aa77baecedc5f678cf8c4afcb3c20064f0868ce458707dd4a1d9946a/9cdf3ea2aa77baecedc5f678cf8c4afcb3c20064f0868ce458707dd4a1d9946a-json.log
+~~~
 
 https://www.cnblogs.com/deali/p/18612139
 
