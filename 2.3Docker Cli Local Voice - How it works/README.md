@@ -1,5 +1,15 @@
 # 原生的Home Assistant语音助理工作原理
 
+
+| Item    | Install    | Description | Hardware   | Integration |
+| -------- | ------- | -------- | ------- |
+| voice satelite|  PE   |   | act as a voice satelite.Capture audio input|
+| STT |  Whisper Docker   | https://hub.docker.com/r/rhasspy/wyoming-whisper  | |
+| TTS |  Piper Docker    | https://hub.docker.com/r/rhasspy/wyoming-piper | raspberrypi    |
+| WakeWord   |OpenWakeWord Docker   | https://hub.docker.com/r/rhasspy/wyoming-openwakeword   |   |
+
+
+
 This article explains how a customer can implement a local voice assistant.Local solution based on Whisper and Piper. 
 
 First,you need to install those,  via  docker. Then piper is (by default) port 10200 and whisper (by default) port 10300.

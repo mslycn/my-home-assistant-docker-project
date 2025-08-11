@@ -63,6 +63,8 @@ docker pull homebridge/homebridge
 
 docker pull openthread/otbr
 
+docker pull ollama/ollama
+
 docker pull ghcr.io/home-assistant-libs/python-matter-server:stable
 docker pull ghcr.io/home-assistant/home-assistant:2025.3.4
 
