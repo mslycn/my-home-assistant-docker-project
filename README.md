@@ -65,6 +65,8 @@ docker pull openthread/otbr
 
 docker pull ollama/ollama
 
+docker pull tailscale/tailscale - https://hub.docker.com/r/tailscale/tailscale
+
 docker pull ghcr.io/home-assistant-libs/python-matter-server:stable
 docker pull ghcr.io/home-assistant/home-assistant:2025.3.4
 

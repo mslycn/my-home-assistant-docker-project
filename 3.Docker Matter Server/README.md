@@ -1,11 +1,6 @@
 I am running Home Assistant on a Raspberry Pi in a docker container.
 
-目前 Matter 在海外得到几乎所有大的生态平台厂家的支持，包括：
-Apple
-Google
-Amazon
-Samsung
-Philips Hue
+
 
 Matter 使用一个基于 IP 的协议栈，支持以下几种网络传输方式：
 
@@ -13,7 +8,21 @@ Wi-Fi
 Thread
 以太网
 
-而 BLE 在 Matter 中仅仅只是承担辅助配网的角色
+## Required Hardware
+
+How To Add Bluetooth Support
+
+BLE 适配器 在 Matter 中仅仅只是承担辅助配网的角色.Bluetooth used during commissioning 
+
+
+### Required Hardware For The ESPHome Bluetooth Proxy
+
+Bluetooth Proxy In Home Assistant Using ESPHome
+
+https://www.simplysmart.house/blog/bluetooth-proxy-home-assistant-epshome
+
+
+
 
 
 Docker Matter Server
@@ -63,17 +72,6 @@ When all of these are configured correctly, you can add matter devices with the 
 https://community.home-assistant.io/t/using-matter-and-thread-in-a-dockerized-ha-instance/721088/7?u=msly
 
 
-## Required Hardware
-
-How To Add Bluetooth Support
-
-
-
-### Required Hardware For The ESPHome Bluetooth Proxy
-
-Bluetooth Proxy In Home Assistant Using ESPHome
-
-https://www.simplysmart.house/blog/bluetooth-proxy-home-assistant-epshome
 
 
 ## Required Software
@@ -114,4 +112,13 @@ arm64 and amd64
 	
 https://github.com/D34DC3N73R/hass-otbr-docker
 ghcr.io/d34dc3n73r/hass-otbr-docker
+
+other
+
+目前 Matter 在海外得到几乎所有大的生态平台厂家的支持，包括：
+Apple
+Google
+Amazon
+Samsung
+Philips Hue
 
