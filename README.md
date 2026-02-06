@@ -93,6 +93,12 @@ mqtt
 ~~~
 
 
+docker manifest inspect rhasspy/wyoming-vosk 
+docker manifest inspect  ghcr.io/mslycn/wyoming-vosk-standalone
+
+docker manifest inspect rhasspy/wyoming-piper
+
+
 ## Where to buy？
 
 Best microSD Cards for Raspberry Pi
